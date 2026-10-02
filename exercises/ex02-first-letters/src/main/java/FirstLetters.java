@@ -25,7 +25,20 @@ public class FirstLetters {
      * @return the first character of each word, concatenated
      */
     public static String firstLetters(String words) {
-        // TODO: complete
-        return "";
+        StringBuilder letters = new StringBuilder();
+        String[] arrayOfWords = words.split(" ");
+
+        for (String word: arrayOfWords){
+            letters.append(word.charAt(0));
+        }
+
+        return letters.toString();
     }
 }
+
+
+"""
+Rough Notes
+From the string split it based on space
+then take the first letter of each word
+"""
